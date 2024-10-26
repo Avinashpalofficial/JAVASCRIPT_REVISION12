@@ -10,6 +10,9 @@
  
 console.log(valInNumber);
 
+console.log(typeof valNum);
+
+
 
  
  
