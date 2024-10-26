@@ -19,6 +19,7 @@ console.log(url.replace('20%','_'));
 console.log(newString.split('@'));
 console.log(gameName.split('-'));
 
+console.log(`hello ${"avinash"} , how are you ,my name is ${"Rahul"}`);  
 
 
 
