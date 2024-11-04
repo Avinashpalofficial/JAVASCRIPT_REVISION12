@@ -57,7 +57,73 @@ for (const element of map) {
 
 for (const [key,value] of map) {
   // console.log(key ,"=>" ,value);
-  console.log(key);
+ // console.log(key);
   
   
 }
+
+const my_Oject= {
+   Course : "btech",
+   Enroll: "ys",
+   isloggedin: "ys"
+}
+
+for (const key in my_Oject) {
+      // console.log(`${key} => ${my_Oject[key]}`);    
+}
+
+const my_array = [1,2,3,4,5,6]
+for (const key in my_array) {
+     // console.log(`${key} => ${my_array[key]}`);
+      
+}
+
+const val = new Map()
+val.set('myCourse','javascript')
+val.set('price',99)
+val.set('platform','youtube')
+
+for (const key in val) {
+      // console.log(key);
+       
+}
+
+// foreach 
+const length =0
+const my_List= ['js','rb','sw','cpp']
+my_List.forEach(function(item){
+       //   console.log(item);
+          
+})
+
+my_List.forEach((val)=>{
+       //console.log(val);
+       
+})
+
+function name(params) {
+ // console.log(params);
+  
+}
+my_List.forEach(name)
+
+const user =[
+  {
+    userName :'avin',
+    lastName : 'pal'
+  },
+  {
+    userName :'sam',
+    lastName : 'singh'
+  },
+  {
+    userName :'tom',
+    lastName : 'kaur'
+  }
+]
+
+function Name(item){
+  console.log(item.userName);
+  
+}
+user.forEach(Name)
