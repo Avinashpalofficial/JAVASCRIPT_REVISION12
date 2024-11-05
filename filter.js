@@ -24,6 +24,20 @@ const newNums= my_num.filter((num)=>{
 
      //console.log(myBooks);
      const myBooks = books.filter((item)=> item.publish> 1999 )
-      console.log(myBooks);
+  //    console.log(myBooks);
       
+
+      let myArray = [1,2,3,4,5,6,7,8,9]
+
+      let newArray = myArray.map((item)=> item)
+     // console.log(newArray);
       
+     newArray = myArray
+                       .map((item)=> item*10)
+                       .map((item)=>item+1)
+                       .filter((item)=> item>=41)
+                      
+     console.log(newArray);
+
+     
+     
