@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body style="background-color: black; color: white">
+    <div class="papa">
+      <div class="bachha">Monday</div>
+      <div class="bachha">Tuesday</div>
+      <div class="bachha">Wednesday</div>
+      <div class="bachha">Thrusday</div>
+      <div class="bachha">Friday</div>
+    </div>
+  </body>
+</html>
+
+<script>
+  const papa = document.querySelector(".papa");
+
+  //console.log(papa);
+  console.log(papa.firstElementChild);
+  console.log(papa.lastElementChild.innerHTML);
+  console.log((papa.lastElementChild.style.color = "pink"));
+  // console.log(firstElementChild.ParentElement);
+
+  const bachha = document.querySelector(".bachha");
+  console.log(bachha.parentElement);
+  console.log(papa.childNodes);
+</script>
