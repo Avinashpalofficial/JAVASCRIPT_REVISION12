@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body style="background-color: black; color: white">
+    <ul class="lang">
+      <li>javascript</li>
+    </ul>
+  </body>
+</html>
+<script>
+  /* 
+   normal method 
+
+   const li = document.createElement('li')
+    li.innerHTML='python'
+    document.querySelector('.lang').appendChild(li)
+    */
+
+  //  better method but not optimize
+  function addlang(language) {
+    const li = document.createElement("li");
+    li.innerHTML = `${language}`;
+    document.querySelector(".lang").appendChild(li);
+  }
+  addlang("python");
+  addlang("bhailang");
+  addlang("Ruby");
+
+  function addnewlang(newlang) {
+    const newlist = document.createElement("li");
+    console.log(newlist);
+
+    newlist.appendChild(document.createTextNode(newlang));
+    document.querySelector(".lang").appendChild(newlist);
+  }
+  addnewlang("C++");
+
+  const li = document.querySelector("li:nth-child(2)");
+  // li.innerHTML= 'bhai'
+  const newli = document.createElement("li");
+  newli.textContent = "vue.js";
+  li.replaceWith(newli);
+
+  const firele = document.querySelector("li:first-child");
+  firele.outerHTML = "<li>mojo</li>";
+
+  const lastele = document.querySelector("li:last-child");
+  lastele.remove();
+</script>
