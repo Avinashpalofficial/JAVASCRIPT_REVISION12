@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body style="background-color: black; color: azure">
+    <h1>I am learning js</h1>
+    <button id="stop">xtop</button>
+    <button id="start">xtart</button>
+  </body>
+</html>
+
+<script>
+      const fun=   function(str){
+            console.log(str,"js");
+            
+        }
+       //let stopInterval=  setInterval(fun,2000,"hello")
+       document.querySelector("#start").addEventListener('click',function(){
+          const X= setInterval(fun,2000,"hello")
+           document.querySelector('#stop').addEventListener('click',function(){
+    
+               clearInterval( X)
+               console.log("stop");
+               
+           })
+        })
+</script>

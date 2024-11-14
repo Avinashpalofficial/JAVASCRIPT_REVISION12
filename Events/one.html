@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body style="background-color: black; color: azure">
+    <h1>The great Avinash</h1>
+    <button id="stop">xtop</button>
+  </body>
+</html>
+
+<script>
+  const name = function () {
+    console.log("Avinash");
+  };
+  const changeText = function () {
+    document.querySelector("h1").innerHTML = "The great Machhr";
+
+    //console.log("macchr");
+  };
+  const clearme = setTimeout(name, 5000);
+  const changeMe = setTimeout(changeText, 3000);
+  document.querySelector("#stop").addEventListener("click", function () {
+    clearTimeout(changeMe);
+    console.log("stopped");
+  });
+</script>
